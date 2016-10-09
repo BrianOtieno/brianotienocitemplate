@@ -4,7 +4,6 @@ class Main extends CI_Controller {
 		parent::__construct();
 	
 		$this->load->library(array('form_validation', 'session', 'table', 'bcrypt', 'encrypt', 'email', 'typography'));
-	//	$this->load->model(array('main_model'));
 		$this->load->helper(array('date', 'array', 'html', 'url', 'form'));
 		
 			
@@ -29,19 +28,7 @@ class Main extends CI_Controller {
 	}
 	
 	
-	function home(){
-		$this->dashboard();
-		$this->load->view('homepage');
-	}
 	
-	function resetForm(){
-		$this->load->view('resetForm');
-	}	
-	
-	function validate_login(){
-		$this->dashboard();
-		$this->load->view('homepage');
-	}
 	
 
 
